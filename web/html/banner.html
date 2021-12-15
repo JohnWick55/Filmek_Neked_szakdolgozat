@@ -1,0 +1,22 @@
+<!-- Banner -->
+<div class="banner-wrap">
+    <div class="banner">
+        <div class="banner-content">
+            <h2>Movies for You</h2>
+            <p>Mi kigyűjtöttük a legjobb filmeket, itt mindig megtalálod a számodra megfelelő filmet!</p>
+            <a href="#jpmovies" class="jump-button">Ugrás a filmekhez</a>
+        </div>
+    </div>
+</div>
+<div class="filters">
+    <datalist id="tlistmovie"></datalist>
+    <datalist id="tlistpersons"></datalist>
+    <label for="Movie">Filmcím</label><input type="text" name="Movie" id="moviesInput" class="form-control minput"
+        list="tlistmovie" onchange="movieChange()">
+    <label for="Persons">Színész/Rendező</label><input type="text" name="Persons" id="personsInput" class="form-control"
+        list="tlistpersons" onchange="personChange()">
+    <select class="form-control" aria-label="Default select example" id="categList" onchange="categChange()">
+    </select>
+    <button class="searchButton">Keresés</button>
+    <button class="clearFilters" onclick="clearAllFilters()">Szűrők törlése</button>
+</div>
